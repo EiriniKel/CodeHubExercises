@@ -30,7 +30,7 @@ public class ExerciseOnStrings {
         //System.out.println(x);
 
         if (EightChars(password) && x >= 3) {
-            if (UpperCase(password) && LowerCase(password) && OneNumber(password) && SpecialChar(password) && SequenseOfThree(password)) {
+            if (x == 6) {
                 System.out.println("Very Strong Password");
             } else if (OneNumber(password) && SequenseOfThree(password) || SpecialChar(password) && SequenseOfThree(password)) {
                 System.out.println("Password OK");
