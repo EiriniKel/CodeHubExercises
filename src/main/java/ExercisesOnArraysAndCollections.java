@@ -20,17 +20,21 @@ public class ExercisesOnArraysAndCollections {
 
     static boolean isPrime(int input) {
 
-        if (input == 1) {
-            return false;
-        }
-        for (int i = 2; i < input; i++) {
-            if ((input % i) == 0) {
-                return false;
-            }
-        }
-        return true;
-    }
 
+        int division = 0;
+        division = input / 2;
+        boolean result = true;
+
+        if (input <= 0 || input == 1) {
+            result = false;
+        }
+
+        for (int i = 2; i <= division; i++) {
+            if (input % i == 0) {
+                result = false;
+            }
+        } return result;
+    }
 
     //2
     public static <myList> ArrayList<myList> removeDuplicates(ArrayList<myList> list) {
